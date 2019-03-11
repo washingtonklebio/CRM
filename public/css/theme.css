@@ -1,0 +1,28 @@
+.theme-mix{
+    background: linear-gradient(140deg ,  #3d8cef  , #158e5c 50%) !important;
+}
+.theme-resplend{
+    background: linear-gradient(140deg ,  #177fff  , #d415e0 60%) !important;
+}
+
+.theme-emo{
+    background: linear-gradient(140deg ,  #556270  , #ff6b6b 60%) !important;
+}
+
+.theme-flyblue{
+    background: linear-gradient(140deg, #48c6ef, #6f86d6 60%) !important;
+}
+
+.theme-silence{
+    background: linear-gradient(140deg, #b721ff, #1178C6 60%) !important;
+}
+
+.theme-deepblue{
+    background: linear-gradient(140deg, #09203f, #537895 60%) !important;
+}
+
+.theme-dense{
+    background: #00c6ff !important; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00c6ff, #0072ff) !important; /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00c6ff, #0072ff)  !important;
+}

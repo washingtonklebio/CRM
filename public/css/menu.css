@@ -1,0 +1,137 @@
+
+@import url("uikit.min.css");
+@import url("theme.css");
+/*declaration the variables*/
+
+:root{
+    --mainColor : #fff !important;
+    --navbarColor :#1e87f0 !important;
+    --background-danger: #c12b2bbf !important ;
+    --colorTransparent : #00000033;
+    --cursor : pointer !important;
+    --re  :relative;
+    --ab  :absolute;
+    --fi  :fixed;
+    --max : 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none !important;
+}
+
+.uk-alert-danger{
+    background: var(--background-danger);
+    color: var(--mainColor);
+}
+
+.uk-close{
+    cursor: var(--cursor);
+}
+
+.uk-card-default {
+    background: var(--mainColor);
+    color: #666;
+    border: 1px solid #cccccc8a;
+}
+
+
+.uk-navbar-container:not(.uk-navbar-transparent){
+    height: 3.5em;
+}
+.uk-navbar-item{
+    height: 2.7em;
+    color: var(--mainColor);
+}
+.uk-navbar-toggle , .mb-active{
+    height: 3.5em;
+}
+.uk-navbar-nav>li>a , .uk-navbar-toggle-icon,.uk-navbar-dropdown-nav>li>a,
+.uk-navbar-toggle.uk-open,.mb-active>a{
+    color: var(--mainColor);
+    text-transform: capitalize;
+}
+.uk-navbar-toggle:focus, .uk-navbar-toggle:hover{
+    color: var(--mainColor);
+}
+.mb-active{
+    background: var(--colorTransparent);
+}
+#mb-dropdown{
+    top: 50px !important;
+    background: var(--navbarColor);
+}
+
+.mb-menu{
+    position: var(--fi) !important;
+    width: var(--max);
+    right: 0;
+    position: var(--ab);
+    z-index: 1000;
+}
+
+.mb-body{
+    width: var(--max);
+    min-height: var(--max);
+    position: var(--ab);
+}
+
+.mb-menu-sidebar{
+    display: flex;
+    width: 17%;
+    height: 100%;
+    position: var(--fi);
+    bottom: 0;
+}
+.mb-menu-sidebar>ul{
+    position: var(--re);
+    top: 4em;
+}
+
+.mb-badge{
+    background: #e40f0f !important;
+    position: var(--ab);
+    top: 7px;
+    z-index:  1000;
+}
+
+.mb-content{
+    width: 83%;
+    min-height: 90.2%;
+    position: var(--ab);
+    top: 4em;
+    right: 0;
+}
+
+.mb-picture-user{
+    height:100px !important;
+    position:var(--re);
+    right:0.5em;
+}
+
+
+.circle{
+    width: 4em;
+    height: 4em;
+    border-radius: var(--max);
+    position: var(--re);
+    right: 15px;
+}
+
+
+
+/*color circle*/
+.circle-green{background:#4b9254;}
+.circle-red{background: var(--background-danger);}
+.circle-orange{background: #EDA219;}
+.circle-purple{background: #C10FDD;}
+.circle-blue{background: #168BED;}
+.color{color: var(--mainColor) !important;}
+
+
+@media(max-width: 768px){
+    .mb-content{
+        width: var(--max);
+    }
+}
