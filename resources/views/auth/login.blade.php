@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 <style type="text/css">
-    .theme-mix{
+    .theme-mix2{
         background: #00c6ff !important; /* fallback for old browsers */
         background: -webkit-linear-gradient(to bottom, #00c6ff, #0072ff) !important; /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to bottom, #00c6ff, #0072ff)  !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 </style>
 @section('content')
-    <div class="theme-mix uk-section uk-section-muted uk-flex uk-flex-middle uk-animation-fade" uk-height-viewport>
+    <div class="theme-mix2 uk-section uk-section-muted uk-flex uk-flex-middle uk-animation-fade" uk-height-viewport>
         <div class="uk-width-1-1">
             <div class="uk-container">
                 <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
