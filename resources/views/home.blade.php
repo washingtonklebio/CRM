@@ -13,7 +13,7 @@
                     <li class="mb-active uk-visible@m">
                         <a href=""  style="min-height: auto !important; margin: 3px;">
                             <img src="{{ asset('img/user_male.png') }}" alt="user" style="height:3.5em;position:relative;right:0.5em;" />
-                            Washington
+                            {{ Auth::user()->name }}
                         </a>
                         <div class="uk-navbar-dropdown" id="mb-dropdown">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -36,8 +36,8 @@
                             <img src="{{ asset('img/user_male.png') }}"  class="mb-picture-user" alt="user" />
 
                             <div style="position:relative;top:3px;">
-                                <strong class="color">Washington</strong>
-                                <span class="color" style="font-size: 80%;font-style:oblique;"> washingtonkle@gmail.com </span>
+                                <strong class="color">{{ Auth::user()->name }}</strong>
+                                <span class="color" style="font-size: 80%;font-style:oblique;"> {{ Auth::user()->email }} </span>
                             </div>
                         </a>
                     </li>
